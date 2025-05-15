@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #f0f4f8; /* Soft light blue background */
+  --foreground: #002662; /* Dark slate text */
+  --primary: #4ade80;    /* Vibrant green */
+  --primary-hover: #22c55e; /* Darker green for hover */
+  --secondary: #60a5fa;  /* Soft blue */
+  --secondary-hover: #3b82f6; /* Bright blue for hover */
+  --accent: #facc15;     /* Golden yellow */
+  --accent-hover: #eab308; /* Darker golden yellow */
+  --font-sans: 'Poppins', sans-serif;
+  --font-mono: 'Fira Code', monospace;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #f0f4f8; /* Dark slate background */
+    --foreground:  #1e293b; /* Light text */
+    --primary: #5177d7;    /* Vibrant green */
+    --primary-hover: #3623b6; /* Darker green for hover */
+    --secondary: #60a5fa;  /* Soft blue */
+    --secondary-hover: #3b82f6; /* Bright blue for hover */
+    --accent: #facc15;     /* Golden yellow */
+    --accent-hover: #eab308; /* Darker golden yellow */
+  }
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+}
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 600; /* Slightly bold for emphasis */
+}
+
+a:hover {
+  color: var(--primary-hover);
+}
+
+button {
+  background-color: var(--accent);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.5rem; /* Softer rounded corners */
+  cursor: pointer;
+  font-weight: 600; /* Bold for emphasis */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+button:hover {
+  background-color: var(--accent-hover);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Slightly stronger shadow */
+}
+
+code, pre {
+  font-family: var(--font-mono);
+  background-color: var(--secondary);
+  color: var(--foreground);
+  padding: 0.4rem 0.6rem;
+  border-radius: 0.5rem;
+  font-size: 0.875rem; /* Slightly smaller for compactness */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-sans);
+  font-weight: 700; /* Bold for headings */
+  color: var(--primary);
+}
+
+p {
+  font-family: var(--font-sans);
+  line-height: 1.6; /* Improved readability */
+}
