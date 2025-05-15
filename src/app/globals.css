@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -13,10 +14,25 @@
   --accent-hover: #eab308; /* Darker golden yellow */
   --font-sans: 'Poppins', sans-serif;
   --font-mono: 'Fira Code', monospace;
+=======
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+>>>>>>> 620e9c8cd143a863436cb43cbe8ea5f58f1d3cb5
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
+<<<<<<< HEAD
     --background: #f0f4f8; /* Dark slate background */
     --foreground:  #1e293b; /* Light text */
     --primary: #5177d7;    /* Vibrant green */
@@ -25,10 +41,15 @@
     --secondary-hover: #3b82f6; /* Bright blue for hover */
     --accent: #facc15;     /* Golden yellow */
     --accent-hover: #eab308; /* Darker golden yellow */
+=======
+    --background: #0a0a0a;
+    --foreground: #ededed;
+>>>>>>> 620e9c8cd143a863436cb43cbe8ea5f58f1d3cb5
   }
 }
 
 body {
+<<<<<<< HEAD
   background-color: var(--background);
   color: var(--foreground);
   font-family: var(--font-sans);
@@ -79,4 +100,9 @@ h1, h2, h3, h4, h5, h6 {
 p {
   font-family: var(--font-sans);
   line-height: 1.6; /* Improved readability */
+=======
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+>>>>>>> 620e9c8cd143a863436cb43cbe8ea5f58f1d3cb5
 }
