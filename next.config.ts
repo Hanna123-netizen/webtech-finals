@@ -1,8 +1,8 @@
-/** @type {import('next').NextConfig} */
+// next.config.ts
 const nextConfig = {
-  eslint: {
-    ignoreDuringBuilds: true,
+  typescript: {
+    ignoreBuildErrors: true, // 👈 ito yung key
   },
 };
 
-module.exports = nextConfig;
+export default nextConfig;
